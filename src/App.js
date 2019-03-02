@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import './popup.css';
 import DisplayText from './displalyText';
@@ -25,6 +26,8 @@ class App extends React.Component{
     render(){
         return(
             <div className="app">
+                <Link to="/some" />
+                <a href="/some" >click here!</a>
                 <input type='text' name='some' ref='enterName'/>
                 <input type='button' onClick={(e)=>this.handleClick(e)}  name='Add' value='Add Text' minLength='3'/>
                 <DisplayText info={this.state}/>

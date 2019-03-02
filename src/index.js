@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
+
+import { BrowserRouter, Route,Switch ,Link} from 'react-router-dom';
 import App from './app';
+import ContactUsLayout from './contact-us/components/contact-us-layout';
 import {data} from './app-demo';
+
 
 
 
@@ -54,10 +58,19 @@ console.dir(data);
 
 
 
+function Some(){
+        return (<h1>Some Page!</h1>);
+}
 
 
 ReactDom.render(
-   // element1,
-   <App />,
+    <BrowserRouter>
+        <Switch>
+
+            <Route path="/contact" render={()=>(<ContactUsLayout />)}   />
+             <Route path="/some" render={()=>(<Some />)}   />
+            <Route path="/" render={()=>(<App />)}  />
+        </Switch>
+    </BrowserRouter>,
     document.getElementById('root')
 );
