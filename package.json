@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Create react app from scratch",
   "keywords": [
-    "react-app","scratch"
+    "react-app",
+    "scratch"
   ],
   "main": "index.js",
   "scripts": {
@@ -17,6 +18,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-loadable": "^5.4.0",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.2.2"
   },
   "babel": {

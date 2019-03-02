@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './app';
+import {data} from './app-demo';
 
 
 
@@ -30,6 +31,29 @@ function App() {
     );
 }
 */
+
+/* arrow funcutin demo */
+console.log('arrow function demo!');
+// ES 5 version
+
+//console.log('calling multiFunction = ',demo(2,3));
+console.dir(data);
+// ES 6 version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ReactDom.render(
